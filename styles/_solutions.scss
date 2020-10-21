@@ -1,0 +1,53 @@
+.getsolutions {
+    //grid-row: ;
+    margin-top:20px;
+    .solcontainer {
+        opacity: 0.5;
+        background-color: #333333;
+        display:grid;
+        grid-template: minmax(500px, auto) / repeat(2, 1fr);
+        @media screen and (max-width: 768px) {
+            grid-template: auto / 100%;
+        }
+        row-gap: 100px;
+       
+        align-items: center;
+        .textsol {
+            grid-column: 1/2;
+            position: relative;
+            padding: 10px;
+            text-align: center;
+            @media screen and (max-width: 640px) {
+                grid-column: 1/-1;;
+
+           }
+            color: white;
+            h2 {
+                text-transform: uppercase;
+                @media screen and (max-width:640px) {
+                    text-align: center;
+                }
+            }
+            .parasol {
+                text-align: center;
+                @media screen and (max-width:640px) {
+                    //transform:translate(100%,0);
+                }
+            }
+        }
+        .imgsol {
+            grid-column: 2/-1;
+            @media screen and (max-width: 768px) {
+                grid-column: 1/-1;
+           }
+            .sol {
+                width: 100%;
+                max-height: 500px;
+                @media screen and (max-width: 768px){
+                    max-height: 250px;
+                }
+            }
+        }
+        
+    }
+}

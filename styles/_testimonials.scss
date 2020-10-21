@@ -1,0 +1,53 @@
+.testimonial {
+    margin: 40px 0;
+
+    .item-container {
+        display:grid;
+   
+        @media screen and (max-width: 640px) {
+            grid-template:  repeat(2, 1fr) / 100%;
+            
+        }
+        @media screen and (min-width:641px){
+            grid-template: auto  / auto auto;
+            
+           
+             
+        }
+
+        .item {
+            grid-column: span 1;
+            position:relative;
+            //border: 2px solid black;
+            .img {
+                position: absolute;
+                left: 50%;
+                top:10%;
+                transform: translate(-50%,-55%);
+                img {
+                    width: 75px;
+                    border-radius: 50px;
+                }
+                
+            }
+
+            .blockquote {
+                padding: 20px;
+                border: 1px solid rgba(0,0,0,0.16);
+                border-radius: 5px;
+                p {
+                    line-height: 15px;
+                }
+                p::before {
+                    content:"\201C";
+                    font-size: 3em;
+                    font-weight: bold;        
+                }
+                footer {
+                    line-height: 12px;
+                }
+            }
+            
+        }
+    }
+}        
