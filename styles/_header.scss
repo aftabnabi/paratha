@@ -8,22 +8,27 @@
     right:0;
     left: 0;
     background-color: #222951;
-    z-index: 2;;
+    z-index: 2;
+    min-height: 90px;;
     .logo {
         min-width: 100px;
         position: absolute;
+        right: 0;
         left: 10px;
+        float: left;
         width: 8vw;
         max-width: 400px;
         min-height: 70px;
-        height: auto;
-        justify-self: start;
+        z-index: 3;
         @media screen and (max-width: 600px ){
             display:inline-block;
         }
          @media screen and (min-width:1300px) {
              width: 7vw;
-         }   
+         } 
+         a {
+             background: #222951;
+         }  
         
     }
 
@@ -31,14 +36,16 @@
     .topnav { 
         overflow: hidden;
         min-height: 80px;
-        width: 100%;
+        background-color: #222951;
         margin-top: 10px;
+        float: right;
         a {
                 font: 600 16px/19px 'Lato';    
                 padding: 14px 16px;
                 margin: 10px 20px;
-                float: right;
+               // float: right;
                 position: relative;
+                right: 0;
                 &:hover {
                     opacity: 1;
                 }
@@ -70,9 +77,12 @@
   @media screen and (max-width: 640px) {
    
     .topnav.responsive {
-        position: relative;
-        top:70px;
+ 
+        position: absolute;
+        top: 70px;
         background-color: #222951;
+        width: 100%;
+
     }
     .topnav.responsive .icon {
       position: absolute;
