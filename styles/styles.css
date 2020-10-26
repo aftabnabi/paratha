@@ -34,22 +34,14 @@ a {
 }
 
 .nav {
-  -ms-grid-columns: 2fr 10fr;
-      grid-template-columns: 2fr 10fr;
-  position: absolute;
-  right: 0;
-  left: 0;
-  background-color: #222951;
-  z-index: 2;
-  min-height: 90px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #222951;
+    z-index: 2;
+    min-height: 90px;
 }
 
-@media screen and (max-width: 600px) {
-  .nav {
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-  }
-}
 
 .nav .logo {
   min-width: 100px;
@@ -92,18 +84,13 @@ a {
   padding: 14px 16px;
   margin: 10px 20px;
   position: relative;
-  right: 0;
 }
 
 .topnav a:hover {
   opacity: 1;
 }
 
-.topnav a .icon {
-  display: none;
-}
-
-.icon {
+a.icon {
   display: none;
 }
 
@@ -113,16 +100,10 @@ a {
   }
   a.icon {
     position: absolute;
-    left: 80vw;
+    left: 70vw;
     display: inline-block;
     top: 10px;
     padding: 5px;
-  }
-}
-
-@media screen and (max-width: 640px) and (max-width: 440px) {
-  a.icon {
-    left: 70vw;
   }
 }
 
@@ -149,7 +130,7 @@ a {
   /*background: url('../images/4000x2250.png') center;//4000x2250*/
   background: url("../images/smoothie-413x275.jpg") center;
   background-size: cover;
-  -o-object-fit: contain;
+  
      object-fit: contain;
   padding: 10vw 0;
   /* grid styles */
@@ -188,14 +169,7 @@ a {
   position: relative;
   top: -5%;
   text-shadow: 12px 14px 21px #000;
-  /*
-    font-size: 4rem;
-    padding: 15px;
-    padding-bottom: 1rem;
-    box-shadow: 0px 0px 7px 4px black;
-    background-color: transparent;
-    background: #100e1722;
-*/
+  
 }
 
 @media screen and (max-width: 640px) {
@@ -672,4 +646,3 @@ section#package {
         justify-self: center;
   }
 }
-/*# sourceMappingURL=styles.css.map */
